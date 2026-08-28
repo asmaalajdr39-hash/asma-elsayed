@@ -1,165 +1,259 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>أسما السيد | الموقع الرسمي</title>
 
 <style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fffaf7;
-    color: #222;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-header {
-    background: #6b2637;
-    color: white;
-    padding: 25px 15px;
-    text-align: center;
+body{
+  font-family:Arial,Tahoma,sans-serif;
+  background:#fffaf7;
+  color:#2d2023;
+  line-height:1.9;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
+header{
+  background:linear-gradient(135deg,#651d32,#8b3048);
+  color:white;
+  text-align:center;
+  padding:50px 20px 42px;
+  border-bottom:4px solid #c8a96b;
 }
 
-header p {
-    margin: 8px 0 0;
+header h1{
+  font-size:42px;
+  margin-bottom:8px;
 }
 
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
+header p{
+  font-size:18px;
 }
 
-nav a {
-    color: #6b2637;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+nav{
+  background:white;
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  padding:14px 8px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  border-bottom:1px solid #eadbd5;
 }
 
-.hero {
-    text-align: center;
-    padding: 70px 20px;
+nav a{
+  color:#70253a;
+  text-decoration:none;
+  font-weight:bold;
+  padding:8px 10px;
 }
 
-.hero h2 {
-    font-size: 35px;
-    color: #6b2637;
+.hero{
+  text-align:center;
+  padding:75px 20px;
+  background:linear-gradient(#fffaf7,#f8edef);
 }
 
-.hero p {
-    font-size: 18px;
-    line-height: 2;
+.hero h2{
+  color:#70253a;
+  font-size:40px;
+  margin-bottom:15px;
 }
 
-button {
-    background: #6b2637;
-    color: white;
-    border: 0;
-    padding: 14px 25px;
-    border-radius: 8px;
-    font-size: 17px;
+.gold-line{
+  width:70px;
+  height:3px;
+  background:#c8a96b;
+  margin:0 auto 22px;
 }
 
-.stories {
-    padding: 30px 20px;
+.hero p{
+  max-width:700px;
+  margin:0 auto 28px;
+  font-size:19px;
 }
 
-.stories h2 {
-    text-align: center;
-    color: #6b2637;
+.btn{
+  display:inline-block;
+  background:#70253a;
+  color:white;
+  text-decoration:none;
+  padding:13px 26px;
+  border-radius:10px;
+  font-weight:bold;
 }
 
-.card {
-    background: white;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #eee;
+section{
+  max-width:1050px;
+  margin:auto;
+  padding:60px 20px;
 }
 
-.card h3 {
-    color: #6b2637;
+.section-title{
+  text-align:center;
+  color:#70253a;
+  font-size:32px;
+  margin-bottom:30px;
 }
 
-footer {
-    margin-top: 50px;
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 25px;
+.stories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
 }
 
+.story{
+  background:white;
+  border:1px solid #efe1dc;
+  border-top:4px solid #c8a96b;
+  border-radius:16px;
+  padding:24px;
+}
+
+.story h3{
+  color:#70253a;
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.story p{
+  color:#62575a;
+  margin-bottom:16px;
+}
+
+.story a{
+  color:#70253a;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.about{
+  background:#70253a;
+  color:white;
+  border-radius:20px;
+  padding:40px 25px;
+  text-align:center;
+  border-bottom:4px solid #c8a96b;
+}
+
+.about h2{
+  font-size:30px;
+  margin-bottom:12px;
+}
+
+.about p{
+  max-width:720px;
+  margin:auto;
+  font-size:18px;
+}
+
+footer{
+  background:#241b1e;
+  color:#ddd;
+  text-align:center;
+  padding:28px 15px;
+}
+
+footer strong{
+  color:#d7bb7d;
+}
+
+@media(max-width:600px){
+  header h1{
+    font-size:35px;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  nav a{
+    font-size:14px;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>أسما السيد</h1>
-    <p>الموقع الرسمي للكاتبة أسما السيد</p>
+  <h1>أسما السيد</h1>
+  <p>الموقع الرسمي للكاتبة أسما السيد</p>
 </header>
 
 <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#stories">القصص</a>
-    <a href="#about">عن الكاتبة</a>
+  <a href="#home">الرئيسية</a>
+  <a href="#stories">القصص</a>
+  <a href="#about">عن الكاتبة</a>
 </nav>
 
-<section class="hero">
+<div class="hero" id="home">
+  <h2>حكايات تلمس القلب</h2>
+  <div class="gold-line"></div>
 
-    <h2>مرحبًا بكم في عالمي</h2>
-
-    <p>
-    هنا تجدون حكايات وقصص اجتماعية ودرامية مشوقة،
+  <p>
+    أهلًا بكم في عالمي...
+    هنا تجدون قصصًا اجتماعية ودرامية وحكايات مشوقة،
     تأخذكم من أول سطر حتى النهاية.
-    </p>
+  </p>
 
-    <button>اقرأ أحدث القصص</button>
+  <a class="btn" href="#stories">اقرئي أحدث القصص</a>
+</div>
 
+<section id="stories">
+  <h2 class="section-title">أحدث القصص</h2>
+
+  <div class="stories">
+
+    <article class="story">
+      <h3>قصة جديدة قريبًا</h3>
+      <p>
+        هنا سنضع أول قصة كاملة، مع مقدمة قصيرة تشجع القارئ على فتحها ومتابعة الأحداث.
+      </p>
+      <a href="#">قراءة القصة ←</a>
+    </article>
+
+    <article class="story">
+      <h3>من حكايات أسما السيد</h3>
+      <p>
+        قصص اجتماعية ودرامية مليئة بالمواقف الإنسانية والمفاجآت والأحداث المشوقة.
+      </p>
+      <a href="#">قراءة القصة ←</a>
+    </article>
+
+    <article class="story">
+      <h3>حكاية اليوم</h3>
+      <p>
+        هنا ستجدون أحدث الحكايات والأجزاء الجديدة في مكان واحد.
+      </p>
+      <a href="#">قراءة القصة ←</a>
+    </article>
+
+  </div>
 </section>
 
-<section class="stories" id="stories">
-
-    <h2>أحدث القصص</h2>
-
-    <div class="card">
-        <h3>القصة الأولى</h3>
-
-        <p>
-        هنا سنضع أول قصة من قصصي قريبًا...
-        </p>
-    </div>
-
-</section>
-
-<section class="stories" id="about">
-
+<section id="about">
+  <div class="about">
     <h2>عن الكاتبة</h2>
 
-    <div class="card">
-
-        <p>
-        أسما السيد، كاتبة قصص اجتماعية ودرامية،
-        أقدم حكايات مشوقة بأسلوب بسيط وقريب من القارئ.
-        </p>
-
-    </div>
-
+    <p>
+      أنا أسما السيد، كاتبة قصص وحكايات اجتماعية ودرامية.
+      أنشأت هذا الموقع ليكون المكان الرسمي لأعمالي،
+      ولتجدوا فيه القصص والحكايات الجديدة في مكان واحد.
+    </p>
+  </div>
 </section>
 
 <footer>
-    جميع الحقوق محفوظة © أسما السيد 2026
+  <p>جميع الحقوق محفوظة © 2026 <strong>أسما السيد</strong></p>
+  <p>الموقع الرسمي للكاتبة أسما السيد</p>
 </footer>
 
 </body>
